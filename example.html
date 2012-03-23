@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>List Example</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+		<script src="src/jquery.list.js"></script>
+		
+		<script>
+			$(function() {
+				$('#list').xyz({
+					input: $('#new-value'),
+                    junk: "not used"
+				});
+			});
+		</script>
+		
+	</head>
+	<body>
+		
+		<div>
+			<input id="new-value" type="text" />
+		</div>
+		<ul id="list">
+		</ul>
+		
+	</body>
+</html>
