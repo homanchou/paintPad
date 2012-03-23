@@ -1,0 +1,3 @@
+describe("jquery.paintPad", function() {
+    
+});

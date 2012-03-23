@@ -1,21 +1,11 @@
 
 (function( $ ) {
-	$.widget( 'abc.xyz', {
-       _create: function() {
 
-         console.log(this.options.input);
-         this.options.input.keypress( this._keypress );
-       },
-       _keypress: function(e) {
-         if ( e.which == $.ui.keyCode.ENTER ) {
-				e.preventDefault();
-				this._addItem(e);
-			}
-       }
-/*		
+	$.widget( 'dp.list', {
+		
 		_create: function() {
 			var self = this;
-		    console.log(this);	
+			
 			this.input = $( this.options.input )
 				.keypress( $.proxy( this._keypress, self ) );
 				
@@ -49,7 +39,7 @@
 				this._addItem(e);
 			}
 		}
-*/		
+		
 	});
 	
 })( jQuery );
