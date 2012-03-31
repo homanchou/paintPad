@@ -9,6 +9,10 @@ describe("paintPad", function() {
      expect($('#drawing_area')).toContain('canvas');
    }); 
 
+   it("canvas should have default size", function() {
+       expect($('#drawing_area').find('canvas').width()).toHaveValue(100);
+   });
+
    
 
 });

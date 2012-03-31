@@ -4,25 +4,31 @@
 		<title>List Example</title>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
-		<script src="src/jquery.list.js"></script>
+		<script src="src/jquery.paintPad.js"></script>
 		
 		<script>
 			$(function() {
-				$('#list').xyz({
-					input: $('#new-value'),
-                    junk: "not used"
+				$('#drawing_area').paintPad({
+					width:400,
+                    height:400
 				});
 			});
 		</script>
 		
 	</head>
 	<body>
-		
-		<div>
-			<input id="new-value" type="text" />
+		<style>
+          body {
+            border:0;
+            padding:0;
+            margin:0;
+
+          }
+          canvas {
+            border:3px dashed orange;
+          }
+        </style>
+		<div id="drawing_area">
 		</div>
-		<ul id="list">
-		</ul>
-		
 	</body>
 </html>
